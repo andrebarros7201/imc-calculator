@@ -117,5 +117,27 @@
   }
 }
 
+@media (max-width: 700px){
+  #root{
+    height:95vh;
+    flex-flow: column nowrap;
+    width: 95%;
+  }
+
+  .left{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  form{
+    border-top-right-radius: 0;
+  }
+
+  .right-bottom{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
 
 
