@@ -15,9 +15,14 @@
   flex: 1;
 }
 
-.left{
+.left {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  padding:1rem;
+
+  & ul li {
+    list-style: none;
+  }
 }
 
 .right{
