@@ -21,9 +21,9 @@ function App() {
       <section className="left"></section>
 
       <section className="right">
-        <h3>Calculate IMC</h3>
-
         <form onSubmit={(e) => handleSubmit(e)}>
+          <h3>Calculate IMC</h3>
+
           <span>
             <label htmlFor="height">Height (cm)</label>
             <input
