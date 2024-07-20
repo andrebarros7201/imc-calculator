@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [values, setValues] = useState({ height: 0, weight: 0 });
+  const [values, setValues] = useState({ height: null, weight: null });
   const [imcResult, setImcResult] = useState(null);
 
   function handleValueChange(field, value) {
@@ -32,6 +32,8 @@ function App() {
               id="height"
               min={1}
               max={230}
+              value={values.height}
+              placeholder={"Ex: 180"}
               onChange={(e) => handleValueChange("height", e.target.value)}
             />
           </span>
@@ -43,6 +45,8 @@ function App() {
               id="weight"
               min={1}
               max={300}
+              value={values.weight}
+              placeholder={"Ex: 80"}
               onChange={(e) => handleValueChange("weight", e.target.value)}
             />
           </span>
